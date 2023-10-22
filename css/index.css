@@ -190,10 +190,20 @@ header .search {
     transition: 0.3s all ease;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 767px) {
     .search-btn {
         left: 0;
 
+    }
+
+    .search-box {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .search-box.active {
+        visibility: visible;
+        opacity: 1;
     }
 
     .menu-toggle {
@@ -443,6 +453,61 @@ header .search {
     transform: scale(1.1);
 }
 
+@media (max-width: 767px) {
+    .intro .container {
+        width: 300px;
+    }
+
+    .intro .container a {
+        right: 50px;
+        padding: 15px;
+        color: #fff;
+        border-radius: 8px;
+        bottom: 30px;
+    }
+
+    .intro .container h2 {
+        text-align: center;
+        letter-spacing: 3px;
+        font-size: 24px;
+        font-weight: 800;
+    }
+
+    .intro .container p {
+        font-size: 14px;
+        font-weight: 600;
+        margin-top: 30px;
+        letter-spacing: 1px;
+        text-align: center;
+
+    }
+
+    .genres-and-artists {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .featured-genres {
+        width: 300px;
+        height: 70px;
+    }
+
+    .featured-genres h2 {
+        font-size: 24px;
+    }
+
+    .latest-artists {
+        margin-top: 70px;
+        width: 300px;
+        height: 70px;
+    }
+
+    .latest-artists h2 {
+        font-size: 24px;
+    }
+
+}
+
 /* FOOTER */
 
 footer {
@@ -477,6 +542,7 @@ footer .container .sci {
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(4, 50px);
+    list-style: none;
 }
 
 footer .container .sci li a {
@@ -484,14 +550,13 @@ footer .container .sci li a {
     width: 360px;
     height: 36px;
     color: #333;
-    display: grid;
     align-content: center;
     text-decoration: none;
     justify-content: center;
 }
 
 footer .container .sci li a i {
-    color: #fff;
+    color: #000;
     font-size: 20px;
 }
 
@@ -537,4 +602,39 @@ footer .container .contact .info li a {
     text-align: center;
     color: #555;
     border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 991px) {
+    footer {
+        padding: 40px;
+
+    }
+
+    footer .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .copyright-text {
+        padding: 20px 40px 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    footer {
+        padding: 40px;
+    }
+
+    footer .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+
+    .copyright-text {
+        padding: 20px 40px 30px;
+    }
 }
