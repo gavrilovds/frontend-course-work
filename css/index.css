@@ -199,6 +199,7 @@ header .search {
     .search-box {
         visibility: hidden;
         opacity: 0;
+        display: none;
     }
 
     .search-box.active {
@@ -217,10 +218,11 @@ header .search {
 
     header .navigation {
         position: absolute;
-        opacity: 0;
+        display: none;
         visibility: hidden;
         left: 100%;
     }
+
 
     header.open .navigation {
         top: 80px;
@@ -547,7 +549,7 @@ footer .container .sci {
 
 footer .container .sci li a {
     display: inline-block;
-    width: 360px;
+    width: 36px;
     height: 36px;
     color: #333;
     align-content: center;
