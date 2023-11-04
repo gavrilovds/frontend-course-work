@@ -312,6 +312,7 @@ header .search {
 
 .genres-and-artists {
     margin-top: 120px;
+    margin-bottom: 120px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -517,7 +518,6 @@ footer {
     position: relative;
     width: 100%;
     height: auto;
-    margin-top: 300px;
     padding: 50px 100px;
     background: #fff;
 }

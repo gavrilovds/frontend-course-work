@@ -2,9 +2,298 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Мир музыки</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/dbb72ac4f9.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/history.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../scripts/animateTimePeriodCards.js"></script>
+    <title>История</title>
 </head>
 <body>
-
+<header class="main-nav-container">
+    <a href="#" class="logo">Music_WRLD</a>
+    <div class="group">
+        <ul class="navigation">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="genres.html">Жанры</a></li>
+            <li><a href="history.html">История</a></li>
+            <li><a href="artists.html">Исполнители</a></li>
+            <li><a href="profile.html">Профиль</a></li>
+        </ul>
+        <div class="search">
+            <span class="icon">
+                <ion-icon class="search-btn" name="search-outline"></ion-icon>
+                <ion-icon class="close-btn" name="close-outline"></ion-icon>
+            </span>
+        </div>
+        <ion-icon class="menu-toggle" name="menu-outline"></ion-icon>
+    </div>
+    <div class="search-box">
+        <input type="text" placeholder="Что-то ищите?..">
+    </div>
+</header>
+<div class="wrapper">
+    <div class="time-period-card card-animation">
+        <img src="../images/history_images/ancient_music.jpg" alt="Изображение временного отрезка">
+        <h3>Древняя музыка (до 476 года н.э.)</h3>
+        <p>Древняя музыка была тесно связана с религиозными и обрядовыми практиками. Использовались инструменты, такие
+            как флейта, лира и барабаны.</p>
+        <h4 class="popular-tracks">Популярные треки:</h4>
+        <ul>
+            <li>Нет прямых записей, но существуют реконструкции древних мелодий.</li>
+        </ul>
+        <h4>Популярные исполнители:</h4>
+        <ul>
+            <li>Античные музыканты и хоры.</li>
+        </ul>
+        <h4>Прослушать музыку:</h4>
+        <audio controls>
+            <source src="../music/history/very_old_music.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио элемент.
+        </audio>
+    </div>
+    <div class="time-period-card card-animation">
+        <img src="../images/history_images/middle_ages_music.jpg" alt="Изображение временного отрезка">
+        <h3>Средневековая музыка (476 год - 1400 год)</h3>
+        <p>Средневековая музыка была сильно связана с церковными ритуалами. Популярные жанры включали григорианский
+            хорал и мировую музыку.</p>
+        <h4 class="popular-tracks">Популярные треки:</h4>
+        <ul>
+            <li>"Dies Irae" (Григорианский хорал).</li>
+        </ul>
+        <h4>Популярные исполнители:</h4>
+        <ul>
+            <li>Анонимные композиторы и монахи.</li>
+        </ul>
+        <h4>Прослушать музыку:</h4>
+        <audio controls>
+            <source src="../music/history/gregorian_chant.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио элемент.
+        </audio>
+    </div>
+    <div class="time-period-card card-animation">
+        <img src="../images/history_images/renessans_music.jpg" alt="Изображение временного отрезка">
+        <h3>Ренессанс (1400 год - 1600 год)</h3>
+        <p>Время ренессанса принесло новые гармонии и мелодии. Использовались музыкальные инструменты, такие как лютня и
+            клавесин.</p>
+        <h4 class="popular-tracks">Популярные треки:</h4>
+        <ul>
+            <li> "Ave Maria" (Композитор: Томас Луис де Виктория).</li>
+        </ul>
+        <h4>Популярные исполнители:</h4>
+        <ul>
+            <li>Жоао Паес Лобо</li>
+            <li>Орландо ди Лассо</li>
+        </ul>
+        <h4>Прослушать музыку:</h4>
+        <audio controls>
+            <source src="../music/history/ave_maria.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио элемент.
+        </audio>
+    </div>
+    <div class="time-period-card card-animation">
+        <img src="../images/history_images/barocco_music.jpeg" alt="Изображение временного отрезка">
+        <h3>Барокко (1600 год - 1750 год)</h3>
+        <p>Барокко характеризовалось сложными оркестровыми произведениями и виртуозными исполнениями. Появление
+            оперы.</p>
+        <h4 class="popular-tracks">Популярные треки:</h4>
+        <ul>
+            <li>"Four Seasons" (Композитор: Антонио Вивальди)</li>
+        </ul>
+        <h4>Популярные исполнители:</h4>
+        <ul>
+            <li>Иоганн Себастьян Бах</li>
+            <li>Джордж Фридерик Гендель</li>
+        </ul>
+        <h4>Прослушать музыку:</h4>
+        <audio controls>
+            <source src="../music/history/antonio_vivaldi.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио элемент.
+        </audio>
+    </div>
+    <div class="time-period-card card-animation">
+        <img src="../images/history_images/classicsm_music.jpg" alt="Изображение временного отрезка">
+        <h3>Классицизм (1750 год - 1820 год)</h3>
+        <p>Классицизм принес простую и симметричную музыку. Развитие симфонии и сонаты.</p>
+        <h4 class="popular-tracks">Популярные треки:</h4>
+        <ul>
+            <li>"Симфония №9" (Композитор: Людвиг ван Бетховен).</li>
+        </ul>
+        <h4>Популярные исполнители:</h4>
+        <ul>
+            <li>Вольфганг Амадей Моцарт</li>
+            <li>Людвиг ван Бетховен</li>
+        </ul>
+        <h4>Прослушать музыку:</h4>
+        <audio controls>
+            <source src="../music/history/bethoven.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио элемент.
+        </audio>
+    </div>
+    <div class="time-period-card card-animation">
+        <img src="../images/history_images/romantism_music.jpeg" alt="Изображение временного отрезка">
+        <h3>Романтизм (1820 год - 1910 год)</h3>
+        <p>Эпоха романтизма принесла экспрессивную и эмоциональную музыку. Расцвет оперы и лирической музыки.</p>
+        <h4 class="popular-tracks">Популярные треки:</h4>
+        <ul>
+            <li> "Лебединое озеро" (Композитор: Петр Ильич Чайковский)</li>
+        </ul>
+        <h4>Популярные исполнители:</h4>
+        <ul>
+            <li>Петр Ильич Чайковский</li>
+            <li>Фредерик Шопен</li>
+        </ul>
+        <h4>Прослушать музыку:</h4>
+        <audio controls>
+            <source src="../music/history/chaykovski.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио элемент.
+        </audio>
+    </div>
+    <div class="time-period-card card-animation">
+        <img src="../images/history_images/jazz_and_blues_music.jpeg" alt="Изображение временного отрезка">
+        <h3>Джаз и блюз (начало 20 века)</h3>
+        <p> Джаз и блюз развивались в США и стали символами афроамериканской музыкальной культуры. Импровизация и ритм
+            были важными элементами.</p>
+        <h4 class="popular-tracks">Популярные треки:</h4>
+        <ul>
+            <li>"Summertime" (Исполнитель: Элла Фицджеральд)</li>
+        </ul>
+        <h4>Популярные исполнители:</h4>
+        <ul>
+            <li>Луи Армстронг</li>
+            <li>Майлз Дэвис</li>
+        </ul>
+        <h4>Прослушать музыку:</h4>
+        <audio controls>
+            <source src="../music/history/louise_armstrong.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио элемент.
+        </audio>
+    </div>
+    <div class="time-period-card card-animation">
+        <img src="../images/history_images/rock_music.jpg" alt="Изображение временного отрезка">
+        <h3>Рок-н-ролл (1950 годы)</h3>
+        <p> Рок-н-ролл был воплощением молодежной культуры и бунта. Характеризовался энергичными ритмами и гитарными
+            риффами.</p>
+        <h4 class="popular-tracks">Популярные треки:</h4>
+        <ul>
+            <li>"Rock Around the Clock" (Исполнитель: Билл Хейли)</li>
+        </ul>
+        <h4>Популярные исполнители:</h4>
+        <ul>
+            <li>Элвис Пресли</li>
+            <li>Чак Берри</li>
+        </ul>
+        <h4>Прослушать музыку:</h4>
+        <audio controls>
+            <source src="../music/history/ac_dc.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио элемент.
+        </audio>
+    </div>
+    <div class="time-period-card card-animation">
+        <img src="../images/history_images/pop_music.jpg" alt="Изображение временного отрезка">
+        <h3>Современная поп-музыка (с 1980 годов)</h3>
+        <p>Современная поп-музыка включает разнообразные стили и жанры. Используются электронные инструменты и
+            технологии.</p>
+        <h4 class="popular-tracks">Популярные треки:</h4>
+        <ul>
+            <li>"Shape of You" (Исполнитель: Эд Ширан)</li>
+        </ul>
+        <h4>Популярные исполнители:</h4>
+        <ul>
+            <li>Бейонсе</li>
+            <li>Тейлор Свифт</li>
+        </ul>
+        <h4>Прослушать музыку:</h4>
+        <audio controls>
+            <source src="../music/history/shape_of_you.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио элемент.
+        </audio>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="sec aboutus">
+            <h2>О сайте</h2>
+            <p>Данный сайт выполнен в рамках курсовой работы по дисцилине
+                РКЧИР 3 семестра студентом группы ИКБО-01-22 Гавриловым Дмитрием Сергеевичем.</p>
+            <ul class="sci">
+                <li><a href="#"><i class="fab fa-telegram"></i></a></li>
+                <li><a href="https://vk.com/ez312"><i class="fab fa-vk"></i></a></li>
+                <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                <li><a href="https://github.com/gavrilovds"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </div>
+        <div class="sec quicklinks">
+            <h2>Поддержка</h2>
+            <ul>
+                <li><a href="#">F.A.Q.</a></li>
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Помощь</a></li>
+                <li><a href="#">Связь</a></li>
+            </ul>
+        </div>
+        <div class="sec quicklinks">
+            <h2>Быстрая навигация</h2>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="genres.html">Жанры</a></li>
+                <li><a href="history.html">История</a></li>
+                <li><a href="artists.html">Исполнители</a></li>
+                <li><a href="profile.html">Профиль</a></li>
+            </ul>
+        </div>
+        <div class="sec contact">
+            <h2>Свяжитесь со мной</h2>
+            <ul class="info">
+                <li>
+                    <span><i class="fa fa-phone"></i></span>
+                    <p>
+                        <a href="tel:+79636507615">+7-963-650-76-15</a>
+                    </p>
+                </li>
+                <li>
+                    <span><i class="fa fa-envelope"></i></span>
+                    <p>
+                        <a href="mailto:dimagavrilov2004@yandex.ru">dimagavrilov2004@yandex.ru</a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<div class="copyright-text">
+    <p>Copyright 2023 @gavrilovds. Все права защищены</p>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+    let search_button = document.querySelector('.search-btn');
+    let close_button = document.querySelector('.close-btn');
+    let search_box = document.querySelector('.search-box');
+    let navigation = document.querySelector('.navigation');
+    let menu_toggle = document.querySelector('.menu-toggle');
+    let header = document.querySelector('header');
+    search_button.onclick = function () {
+        search_box.classList.add('active');
+        close_button.classList.add('active');
+        search_button.classList.add('active');
+        menu_toggle.classList.add('hide');
+        header.classList.remove('open');
+    }
+    close_button.onclick = function () {
+        close_button.classList.remove('active');
+        search_box.classList.remove('active');
+        search_button.classList.remove('active');
+        menu_toggle.classList.remove('hide')
+    }
+    menu_toggle.onclick = function () {
+        header.classList.toggle('open');
+        close_button.classList.remove('active');
+        search_box.classList.remove('active');
+        search_button.classList.remove('active');
+    }
+</script>
 </body>
 </html>
