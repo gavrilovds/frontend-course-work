@@ -2,9 +2,151 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Мир музыки</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/dbb72ac4f9.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль</title>
 </head>
 <body>
-
+<header class="main-nav-container">
+    <a href="#" class="logo">Music_WRLD</a>
+    <div class="group">
+        <ul class="navigation">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="genres.html">Жанры</a></li>
+            <li><a href="history.html">История</a></li>
+            <li><a href="artists.html">Исполнители</a></li>
+            <li><a href="profile.html">Профиль</a></li>
+        </ul>
+        <div class="search">
+            <span class="icon">
+                <ion-icon class="search-btn" name="search-outline"></ion-icon>
+                <ion-icon class="close-btn" name="close-outline"></ion-icon>
+            </span>
+        </div>
+        <ion-icon class="menu-toggle" name="menu-outline"></ion-icon>
+    </div>
+    <div class="search-box">
+        <input type="text" placeholder="Что-то ищите?..">
+    </div>
+</header>
+<div class="wrapper">
+    <div class="login-form-box">
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="login-form-container">
+            <div class="square" style="--i:0;"></div>
+            <div class="square" style="--i:1;"></div>
+            <div class="square" style="--i:2;"></div>
+            <div class="square" style="--i:3;"></div>
+            <div class="square" style="--i:4;"></div>
+            <div class="form">
+                <h2>Логин</h2>
+                <form>
+                    <div class="inputBox">
+                        <label for="text"></label>
+                        <input type="text" id="text" placeholder="Псевдоним">
+                    </div>
+                    <div class="inputBox">
+                        <label for="password"></label>
+                        <input type="password" id="password" placeholder="Пароль">
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" placeholder="Войти">
+                    </div>
+                    <p class="forget">Забыли пароль? <a href="#">Перейти</a></p>
+                    <p class="forget">Еще нет аккаунта? <a href="#">Зарегистрироваться</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="sec aboutus">
+            <h2>О сайте</h2>
+            <p>Данный сайт выполнен в рамках курсовой работы по дисцилине
+                РКЧИР 3 семестра студентом группы ИКБО-01-22 Гавриловым Дмитрием Сергеевичем.</p>
+            <ul class="sci">
+                <li><a href="#"><i class="fab fa-telegram"></i></a></li>
+                <li><a href="https://vk.com/ez312"><i class="fab fa-vk"></i></a></li>
+                <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                <li><a href="https://github.com/gavrilovds"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </div>
+        <div class="sec quicklinks">
+            <h2>Поддержка</h2>
+            <ul>
+                <li><a href="#">F.A.Q.</a></li>
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Помощь</a></li>
+                <li><a href="#">Связь</a></li>
+            </ul>
+        </div>
+        <div class="sec quicklinks">
+            <h2>Быстрая навигация</h2>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="genres.html">Жанры</a></li>
+                <li><a href="history.html">История</a></li>
+                <li><a href="artists.html">Исполнители</a></li>
+                <li><a href="profile.html">Профиль</a></li>
+            </ul>
+        </div>
+        <div class="sec contact">
+            <h2>Свяжитесь со мной</h2>
+            <ul class="info">
+                <li>
+                    <span><i class="fa fa-phone"></i></span>
+                    <p>
+                        <a href="tel:+79636507615">+7-963-650-76-15</a>
+                    </p>
+                </li>
+                <li>
+                    <span><i class="fa fa-envelope"></i></span>
+                    <p>
+                        <a href="mailto:dimagavrilov2004@yandex.ru">dimagavrilov2004@yandex.ru</a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<div class="copyright-text">
+    <p>Copyright 2023 @gavrilovds. Все права защищены</p>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+    let search_button = document.querySelector('.search-btn');
+    let close_button = document.querySelector('.close-btn');
+    let search_box = document.querySelector('.search-box');
+    let navigation = document.querySelector('.navigation');
+    let menu_toggle = document.querySelector('.menu-toggle');
+    let header = document.querySelector('header');
+    search_button.onclick = function () {
+        search_box.classList.add('active');
+        close_button.classList.add('active');
+        search_button.classList.add('active');
+        menu_toggle.classList.add('hide');
+        header.classList.remove('open');
+    }
+    close_button.onclick = function () {
+        close_button.classList.remove('active');
+        search_box.classList.remove('active');
+        search_button.classList.remove('active');
+        menu_toggle.classList.remove('hide')
+    }
+    menu_toggle.onclick = function () {
+        header.classList.toggle('open');
+        close_button.classList.remove('active');
+        search_box.classList.remove('active');
+        search_button.classList.remove('active');
+    }
+</script>
 </body>
 </html>
