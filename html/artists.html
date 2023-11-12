@@ -2,9 +2,199 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Мир музыки</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/dbb72ac4f9.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/artists.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Исполнители</title>
 </head>
 <body>
-
+<header class="main-nav-container">
+    <a href="#" class="logo">Music_WRLD</a>
+    <div class="group">
+        <ul class="navigation">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="genres.html">Жанры</a></li>
+            <li><a href="history.html">История</a></li>
+            <li><a href="artists.html">Исполнители</a></li>
+            <li><a href="profile.html">Профиль</a></li>
+        </ul>
+        <div class="search">
+            <span class="icon">
+                <ion-icon class="search-btn" name="search-outline"></ion-icon>
+                <ion-icon class="close-btn" name="close-outline"></ion-icon>
+            </span>
+        </div>
+        <ion-icon class="menu-toggle" name="menu-outline"></ion-icon>
+    </div>
+    <div class="search-box">
+        <input type="text" placeholder="Что-то ищите?..">
+    </div>
+</header>
+<div class="wrapper">
+    <div class="artist-card">
+        <img src="../images/artists_images/the_weeknd.jpg" alt="Фото артиста">
+        <div class="content">
+            <h3>The weeknd</h3>
+            <p class="artist-description">The Weeknd, настоящее имя Абель Тесфайе, канадский певец и музыкальный авантюрист, стал мировой сенсацией своим уникальным сочетанием R&B, попа и электронной музыки. Его харизматичный голос, эклектичный стиль и хиты принесли ему широкое признание и успех в индустрии развлечений.</p>
+            <h4>Самый популярный трек:</h4>
+            <p class="artist-famous-track-name">Blinding Lights</p>
+            <audio controls>
+                <source src="../music/pop.mp3" type="audio/mpeg">
+                Ваш браузер не поддерживает аудио элемент.
+            </audio>
+        </div>
+    </div>
+    <div class="artist-card">
+        <img src="../images/artists_images/taylor_swift.jpg" alt="Фото артиста">
+        <div class="content">
+            <h3>Taylor Swift</h3>
+            <p class="artist-description">Taylor Swift, американская певица и автор песен, заслужившая всемирное признание своим уникальным талантом и музыкальным разнообразием. Её многогранный путь от кантри-звезды до успешной исполнительницы поп-музыки украшен хитами, такими как "Love Story" и "Shake It Off".</p>
+            <h4>Самый популярный трек:</h4>
+            <p class="artist-famous-track-name">Blank Space</p>
+            <audio controls>
+                <source src="../music/artists/taylor_swift_track.mp3" type="audio/mpeg">
+                Ваш браузер не поддерживает аудио элемент.
+            </audio>
+        </div>
+    </div>
+    <div class="artist-card">
+        <img src="../images/artists_images/travis_scott.jpg" alt="Фото артиста">
+        <div class="content">
+            <h3>Travis Scott</h3>
+            <p class="artist-description">Travis Scott, американский рэпер и продюсер, выделяется своим уникальным стилем и ярким влиянием в индустрии хип-хопа. Его энергичные выступления и инновационный подход к звуку делают его одним из важнейших представителей современной музыкальной сцены.</p>
+            <h4>Самый популярный трек:</h4>
+            <p class="artist-famous-track-name">Goosebumps</p>
+            <audio controls>
+                <source src="../music/artists/travis_scott_track.mp3" type="audio/mpeg">
+                Ваш браузер не поддерживает аудио элемент.
+            </audio>
+        </div>
+    </div>
+    <div class="artist-card">
+        <img src="../images/artists_images/serega_pirat.jpg" alt="Фото артиста">
+        <div class="content">
+            <h3>SEREGA PIRAT</h3>
+            <p class="artist-description">Русский стример(ютубер), иногда делающий свои треки. Популярность ему принесли некоторые сделанные им ролики на YouTube про популярного стримера – Arthas'а. Собирает огромные стадионы своих фанатов, выпускает по-настоящему душевные песни, в которых заложено много смысла.</p>
+            <h4>Самый популярный трек:</h4>
+            <p class="artist-famous-track-name">Гимн Дахака</p>
+            <audio controls>
+                <source src="../music/artists/serega_pirat_track.mp3" type="audio/mpeg">
+                Ваш браузер не поддерживает аудио элемент.
+            </audio>
+        </div>
+    </div>
+    <div class="artist-card">
+        <img src="../images/artists_images/lana_del_rey.jpg" alt="Фото артиста">
+        <div class="content">
+            <h3>Lana del rey</h3>
+            <p class="artist-description">Lana Del Rey, американская певица и автор песен, обладает уникальным вокалом, меланхоличными мелодиями и эстетикой, придающей ее творчеству неповторимый характер. Ее музыкальные композиции отражают глубокие эмоции и стали символом ностальгии и романтики.</p>
+            <h4>Самый популярный трек:</h4>
+            <p class="artist-famous-track-name">Summertime Sadness</p>
+            <audio controls>
+                <source src="../music/artists/lana_del_rey_track.mp3" type="audio/mpeg">
+                Ваш браузер не поддерживает аудио элемент.
+            </audio>
+        </div>
+    </div>
+    <div class="artist-card">
+        <img src="../images/artists_images/juice_wrld.jpg" alt="Фото артиста">
+        <div class="content">
+            <h3>JUICE WRlD</h3>
+            <p class="artist-description">Juice WRLD был талантливым американским рэпером и автором песен, чья музыка совмещала мелодичные рифмы с откровенными текстами. Его трагически короткая карьера оставила след в индустрии хип-хопа, а хиты продолжают вдохновлять слушателей по всему миру.</p>
+            <h4>Самый популярный трек:</h4>
+            <p class="artist-famous-track-name">Lucid Dreams</p>
+            <audio controls>
+                <source src="../music/artists/juice_wrld_track.mp3" type="audio/mpeg">
+                Ваш браузер не поддерживает аудио элемент.
+            </audio>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="sec aboutus">
+            <h2>О сайте</h2>
+            <p>Данный сайт выполнен в рамках курсовой работы по дисцилине
+                РКЧИР 3 семестра студентом группы ИКБО-01-22 Гавриловым Дмитрием Сергеевичем.</p>
+            <ul class="sci">
+                <li><a href="#"><i class="fab fa-telegram"></i></a></li>
+                <li><a href="https://vk.com/ez312"><i class="fab fa-vk"></i></a></li>
+                <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                <li><a href="https://github.com/gavrilovds"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </div>
+        <div class="sec quicklinks">
+            <h2>Поддержка</h2>
+            <ul>
+                <li><a href="#">F.A.Q.</a></li>
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Помощь</a></li>
+                <li><a href="#">Связь</a></li>
+            </ul>
+        </div>
+        <div class="sec quicklinks">
+            <h2>Быстрая навигация</h2>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="genres.html">Жанры</a></li>
+                <li><a href="history.html">История</a></li>
+                <li><a href="artists.html">Исполнители</a></li>
+                <li><a href="profile.html">Профиль</a></li>
+            </ul>
+        </div>
+        <div class="sec contact">
+            <h2>Свяжитесь со мной</h2>
+            <ul class="info">
+                <li>
+                    <span><i class="fa fa-phone"></i></span>
+                    <p>
+                        <a href="tel:+79636507615">+7-963-650-76-15</a>
+                    </p>
+                </li>
+                <li>
+                    <span><i class="fa fa-envelope"></i></span>
+                    <p>
+                        <a href="mailto:dimagavrilov2004@yandex.ru">dimagavrilov2004@yandex.ru</a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<div class="copyright-text">
+    <p>Copyright 2023 @gavrilovds. Все права защищены</p>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+    let search_button = document.querySelector('.search-btn');
+    let close_button = document.querySelector('.close-btn');
+    let search_box = document.querySelector('.search-box');
+    let navigation = document.querySelector('.navigation');
+    let menu_toggle = document.querySelector('.menu-toggle');
+    let header = document.querySelector('header');
+    search_button.onclick = function () {
+        search_box.classList.add('active');
+        close_button.classList.add('active');
+        search_button.classList.add('active');
+        menu_toggle.classList.add('hide');
+        header.classList.remove('open');
+    }
+    close_button.onclick = function () {
+        close_button.classList.remove('active');
+        search_box.classList.remove('active');
+        search_button.classList.remove('active');
+        menu_toggle.classList.remove('hide')
+    }
+    menu_toggle.onclick = function () {
+        header.classList.toggle('open');
+        close_button.classList.remove('active');
+        search_box.classList.remove('active');
+        search_button.classList.remove('active');
+    }
+</script>
 </body>
 </html>
